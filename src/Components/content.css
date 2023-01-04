@@ -1,0 +1,67 @@
+*{
+    scroll-behavior: smooth;
+}
+
+#paragraph-generator{
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.disply-none{
+    display: none;
+}
+.disply-block{
+    display: block;
+}
+.pointer-events-none{
+    pointer-events: none;
+}
+.card_main{
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+textarea{
+    width: 75%;
+    height: 98px;
+    border-radius: 14px;
+    padding: 7px;
+    border-width: medium;
+    margin: 5px 0px 19px 0px;
+}
+
+#templateKeywordInput{
+    border: 2px solid black;
+    width: 40%;
+    border-radius: 8px;
+    height: 3rem;
+}
+
+.font-weight-bolder{
+    font-weight: bolder;
+}
+
+#tool-selector{
+    margin: 8px 0px 8px 0px;
+    width: 20%;
+    display: block;
+}
+
+#ocAiseoLogo{
+    width: 23px;
+}
+
+.hover_to_zoom:hover{
+    box-shadow: -5px 5px 10px 10px #cdedff;
+    /* cursor: pointer; */
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.margin-8px-0px{
+    margin: 8px 0px;
+}
