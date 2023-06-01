@@ -1,42 +1,28 @@
 import React from 'react';
-import './style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function Header() {
   return (
-    <section class="navbar-dark bg-dark header">
-       <div class="container">
-          <div class="row">
-           <div class="col-sm-12"> 
-            <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand text-white" href="#">AT&VG</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+    // <div className='home'>
+    //   <h1>Home</h1>
+    // </div>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item ">
-                    <a class="nav-link " href="#about">About<span class="sr-only">(current)</span></a>
-                  </li>
-                  {/* <li class="nav-item">
-                    <a class="nav-link" href="#destinations">Destinations<span class="sr-only">(current)</span></a>
-                  </li> */}
-                  <li class="nav-item dropdown">
-                  <a class="nav-link" href="#FAQ">FAQ<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="#services">Services<span class="sr-only">(current)</span></a>
-                  </li>
-                </ul>
-                
-              </div>
-             </nav>
+    <div>
+         <section class="">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img class="d-block w-100" src="https://i.imgur.com/jrWrcA6.jpg" alt="First slide" style={{ height: "auto" }} />
+                  </div>
+                  <div class="carousel-item">
+                     <img class="d-block w-100" src="https://i.imgur.com/dDrA5ox.jpg" alt="Second slide" style={{ height: "auto" }} />
+                  </div>
+                  <div class="carousel-item">
+                     <img class="d-block w-100" src="https://i.imgur.com/VHU8lJY.jpg" alt="Third slide" style={{ height: "auto" }} />
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-    </section> 
+         </section>
+    </div>
   );
 }
 

@@ -5,7 +5,8 @@ import './content.css';
 function Content() {
    return (
       <div>
-         <section class="">
+         {/* Header */}
+         {/* <section class="">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -19,7 +20,7 @@ function Content() {
                   </div>
                </div>
             </div>
-         </section>
+         </section> */}
 
          <section class="bg-light" id="about">
             <div class="container">
@@ -38,7 +39,55 @@ function Content() {
                      like Aldus PageMaker including versions of Lorem Ipsum</p>
                </div>
             </div>
+         {/* </section> */}
+
+
+         {/* <section class="bg-light mt-5" id="services"> */}
+            <div class="container">
+               <div class="row text-center">
+                  <div class="col-sm-12 col-md-12 mb-4">
+                     <h3 class="text-center mt-4 text-secondary">Our Services</h3>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="testimonial mb-5">
+                        <div class="avatar mx-auto">
+                           <a href='/tts2'><img src="https://i.imgur.com/V4JVlwn.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text mt-4">Text to Speech</h4>
+                        <h6 class="font-weight-bold blue-text my-3">Converter</h6>
+                        <p class="font-weight-normal dark-grey-text">
+                           This free text to speech Converter will convert the text provided by you into a voice so that you could listen to the text.</p>
+                     </div>
+                  </div>
+
+                  <div class="col-md-4">
+                     <div class="testimonial mb-5">
+                        <div class="avatar mx-auto">
+                           <a href='/speech'><img src="https://i.imgur.com/w8txiz1.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text mt-4">Speech to Text</h4>
+                        <h6 class="font-weight-bold blue-text my-3">Converter</h6>
+                        <p class="font-weight-normal dark-grey-text">This free speech to text Converter will convert the speech provided by you into text.</p>
+                     </div>
+
+                  </div>
+                  <div class="col-md-4">
+                     <div class="testimonial mb-5">
+                        <div class="avatar mx-auto ">
+                           <a href='#paragraph-generator'><img src="https://i.imgur.com/fP9uXkv.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text mt-4">Paragraph</h4>
+                        <h6 class="font-weight-bold blue-text my-3">Generator</h6>
+                        <p class="font-weight-normal dark-grey-text">
+                           This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </section>
+
+
+
 
          <section class="" id="destinations">
             <div class="container">
@@ -49,7 +98,7 @@ function Content() {
                </div>
                <div class="row">
                   <div class="col-sm-12 mb-5">
-                     <div class="card mt-4 hover_to_zoom">
+                     <div class="card mt-4 ">
                         {/* <img class="card-img-top" src="https://images.pexels.com/photos/256467/pexels-photo-256467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> */}
                         <div class="card-body">
                            <h4 class="card-title" id='paragraph-generator'>Paragraph Generator</h4>
@@ -150,7 +199,7 @@ function Content() {
                   </div>
                   <div class="col-sm-12 mb-5 hover_to_zoom">
                      <div class="card mt-4">
-                        <img class="card-img-top" src="https://images.pexels.com/photos/1467277/pexels-photo-1467277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                        <img class="card-img-top" src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         <div class="card-body">
                            <h4 class="card-title text-secondary">Overcome Writers' Block in 5 Seconds!</h4>
                            <p class="card-text text-secondary">
@@ -275,61 +324,10 @@ function Content() {
                </div>
             </div>
          </section>
-
-
-         <section class="bg-light mt-5" id="services">
-            <div class="container">
-               <div class="row text-center">
-                  <div class="col-sm-12 col-md-12 mb-4">
-                     <h3 class="text-center mt-4 text-secondary">Our Services</h3>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="testimonial mb-5">
-                        <div class="avatar mx-auto">
-                           <a href='#'><img src="https://i.imgur.com/V4JVlwn.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
-                        </div>
-                        <h4 class="font-weight-bold dark-grey-text mt-4">Text to Speech</h4>
-                        <h6 class="font-weight-bold blue-text my-3">Converter</h6>
-                        <p class="font-weight-normal dark-grey-text">
-                           This free text to speech Converter will convert the text provided by you into a voice so that you could listen to the text.</p>
-                     </div>
-                  </div>
-
-                  <div class="col-md-4">
-                     <div class="testimonial mb-5">
-                        <div class="avatar mx-auto">
-                           <a href='#'><img src="https://i.imgur.com/w8txiz1.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
-                        </div>
-                        <h4 class="font-weight-bold dark-grey-text mt-4">Speech to Text</h4>
-                        <h6 class="font-weight-bold blue-text my-3">Converter</h6>
-                        <p class="font-weight-normal dark-grey-text">This free speech to text Converter will convert the speech provided by you into text.</p>
-                     </div>
-
-                  </div>
-                  <div class="col-md-4">
-                     <div class="testimonial mb-5">
-                        <div class="avatar mx-auto ">
-                           <a href='#paragraph-generator'><img src="https://i.imgur.com/fP9uXkv.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
-                        </div>
-                        <h4 class="font-weight-bold dark-grey-text mt-4">Paragraph</h4>
-                        <h6 class="font-weight-bold blue-text my-3">Generator</h6>
-                        <p class="font-weight-normal dark-grey-text">
-                           This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-
-
-
-
+         
+         <br />
+         
       </div>
-
-
-
-
    );
 }
 

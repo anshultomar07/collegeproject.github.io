@@ -57,9 +57,9 @@ textarea{
 .hover_to_zoom:hover{
     box-shadow: -5px 5px 10px 10px #cdedff;
     /* cursor: pointer; */
-    transform: scale(1.05);
+    /* transform: scale(1.0001); */
     transition: all 0.3s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    /* transition: all 0.5s ease-in-out; */
 }
 
 .margin-8px-0px{
