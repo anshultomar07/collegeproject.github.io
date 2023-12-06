@@ -45,23 +45,53 @@ function SpeechToTextAndTextToSpeech2() {
     }
   };
 
+  const handleCopy = () => {
+    navigator.clipboard.writeText(transcript || text);
+    // alert("Text copied to clipboard");
+  }
+
+  const styles = {
+    backgroundImage: 'url("https://i.imgur.com/15iW7lD.png")',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    height: '100vh',
+    // You can add more background properties as needed
+  };
+
+  const text_area = {
+    margin: 'auto',
+    display: 'block'
+  }
+
+  const speak_btn = {
+    margin: 'auto auto 10px 10px',
+    // display: 'block',
+    padding: '4px 14px',
+    borderRadius: '14px'
+  }
+
   return (
-    <div>
-      <div>
-        <button onClick={handleToggleListening}>
-          {listening ? 'Stop Speech Recognition' : 'Start Speech Recognition'}
-        </button>
-        <button onClick={handleResetTranscript}>Reset</button>
-        <button onClick={isSpeaking ? handleStopSpeaking : handleSpeak}>
-          {isSpeaking ? 'Stop' : 'Speak'}
-        </button>
+    <div style={styles}>
+      <div style={{ position: 'relative', top: '20rem' }}>
+        <div style={{ textAlign: 'center' }}>
+          <button style={speak_btn} onClick={handleToggleListening}>
+            {listening ? 'Stop Speech Recognition' : 'Start Speech Recognition'}
+          </button>
+          <button style={speak_btn} onClick={handleResetTranscript}>Reset</button>
+          {/* <button style={speak_btn} onClick={isSpeaking ? handleStopSpeaking : handleSpeak}>
+            {isSpeaking ? 'Stop' : 'Speak'}
+          </button> */}
+        </div>
+
+        <textarea
+          style={text_area}
+          value={text || transcript}
+          onChange={handleTextareaChange}
+          onKeyDown={handleTextareaKeyDown}
+          placeholder="Your text will be displayed here..."
+        />
+        <div style={{textAlign:'right', marginRight : '11.5rem'}}> <button style={speak_btn} onClick={handleCopy}>Copy Text</button> </div>
       </div>
-      <textarea
-        value={text || transcript}
-        onChange={handleTextareaChange}
-        onKeyDown={handleTextareaKeyDown}
-        placeholder="Speak or type here"
-      />
     </div>
   );
 }

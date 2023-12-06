@@ -16,9 +16,9 @@ function Header() {
                   <div class="carousel-item">
                      <img class="d-block w-100" src="https://i.imgur.com/dDrA5ox.jpg" alt="Second slide" style={{ height: "auto" }} />
                   </div>
-                  <div class="carousel-item">
+                  {/* <div class="carousel-item">
                      <img class="d-block w-100" src="https://i.imgur.com/VHU8lJY.jpg" alt="Third slide" style={{ height: "auto" }} />
-                  </div>
+                  </div> */}
                </div>
             </div>
          </section>

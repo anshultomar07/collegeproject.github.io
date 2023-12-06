@@ -9,10 +9,6 @@ function Home() {
             <Header />
             <Content />
         </React.Fragment>
-
-    // <div className='home'>
-    //   <h1>Home</h1>
-    // </div>
   );
 }
 

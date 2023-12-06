@@ -1,9 +1,15 @@
 import React from 'react';
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {useLocation } from 'react-router-dom';
 
 
 function Navbar() {
+
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+
   return (
     <section class="navbar-dark bg-dark header">
        <div class="container">
@@ -22,9 +28,9 @@ function Navbar() {
                     <a class="nav-link " href="/">Home<span class="sr-only">(current)</span></a>
                   </li>
 
-                  {/* <li class="nav-item ">
+                  {isHomePage && <li class="nav-item ">
                     <a class="nav-link " href="#about">About<span class="sr-only">(current)</span></a>
-                  </li> */}
+                  </li>}
                   {/* <li class="nav-item">
                     <a class="nav-link" href="#destinations">Destinations<span class="sr-only">(current)</span></a>
                   </li> */}
@@ -33,25 +39,28 @@ function Navbar() {
                     <a class="nav-link " href="#services">Services<span class="sr-only">(current)</span></a>
                   </li> */}
               
-                  <li class="nav-item">
-                    <a class="nav-link " href="/speech">Speech to text<span class="sr-only">(current)</span></a>
-                  </li>
-
                   {/* <li class="nav-item">
-                    <a class="nav-link " href="/tts">TTS<span class="sr-only">(current)</span></a>
+                    <a class="nav-link " href="/speech">Speech<span class="sr-only">(current)</span></a>
                   </li> */}
 
-                  <li class="nav-item">
-                    <a class="nav-link " href="/tts2">Text to Speech<span class="sr-only">(current)</span></a>
-                  </li>
+                  {location.pathname === '/tts3' && <li class="nav-item">
+                    <a class="nav-link " href="/tts">Text to Speech<span class="sr-only">(current)</span></a>
+                  </li>}
 
                   {/* <li class="nav-item">
-                    <a class="nav-link " href="/tts3">TTS3<span class="sr-only">(current)</span></a>
+                    <a class="nav-link " href="/tts2">TTS2<span class="sr-only">(current)</span></a>
                   </li> */}
 
-                  {/* <li class="nav-item dropdown">
+                  {location.pathname === '/tts' && <li class="nav-item">
+                    <a class="nav-link " href="/tts3">Speech to Text<span class="sr-only">(current)</span></a>
+                  </li>}
+
+                  <li class="nav-item">
+                  <a class="nav-link" href="http://localhost:3000/" target='_blank'>Content Generator<span class="sr-only">(current)</span></a>
+                  </li>
+                  {isHomePage && <li class="nav-item dropdown">
                   <a class="nav-link" href="#FAQ">FAQ<span class="sr-only">(current)</span></a>
-                  </li> */}
+                  </li>}
                   
                   {/* <li class="nav-item">
                     <a class="nav-link " href="/test">Test<span class="sr-only">(current)</span></a>

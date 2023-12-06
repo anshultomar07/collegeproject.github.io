@@ -30,19 +30,23 @@ function Content() {
                   </div>
                </div>
                <div class="row">
-                  <p class="mt-4 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                     It has survived not only five centuries, but also the leap into electronic typesetting,
-                     remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                     sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                     like Aldus PageMaker including versions of Lorem Ipsum</p>
+                  <p class="mt-4 mb-5">Welcome to [Your Website Name] – Your Ultimate Text-to-Speech and Speech-to-Text Companion!
+
+                     Discover the power of seamless communication and accessibility with our innovative platform designed to transform the way you interact with information. Our website is your go-to destination for effortlessly converting text to speech and speech to text, unlocking a world of possibilities for enhanced productivity, learning, and engagement.
+
+                     Whether you're looking to bring your written words to life through the spoken word or seeking a convenient tool for transcribing spoken content into text, [Your Website Name] is here to cater to your needs. Our intuitive interface empowers users of all backgrounds and abilities to harness the potential of voice and written communication, making information more accessible than ever before.
+
+                     But we don't stop there – [Your Website Name] is not just a tool; it's your intelligent companion capable of answering your queries. Ask it questions, seek information, and experience the magic as it provides thoughtful responses, creating a dynamic and interactive experience.
+
+                     Our commitment to innovation, user-friendliness, and inclusivity sets [Your Website Name] apart as a leading platform in the realm of text-to-speech and speech-to-text technologies. Join us on this journey to revolutionize how you engage with content and conversations.
+
+                     Explore the endless possibilities with [Your Website Name] – where words come to life, questions find answers, and communication knows no bounds!</p>
                </div>
             </div>
-         {/* </section> */}
+            {/* </section> */}
 
 
-         {/* <section class="bg-light mt-5" id="services"> */}
+            {/* <section class="bg-light mt-5" id="services"> */}
             <div class="container">
                <div class="row text-center">
                   <div class="col-sm-12 col-md-12 mb-4">
@@ -51,7 +55,7 @@ function Content() {
                   <div class="col-md-4">
                      <div class="testimonial mb-5">
                         <div class="avatar mx-auto">
-                           <a href='/tts2'><img src="https://i.imgur.com/V4JVlwn.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
+                           <a href='/tts' target='_blank'><img src="https://i.imgur.com/V4JVlwn.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
                         </div>
                         <h4 class="font-weight-bold dark-grey-text mt-4">Text to Speech</h4>
                         <h6 class="font-weight-bold blue-text my-3">Converter</h6>
@@ -63,7 +67,7 @@ function Content() {
                   <div class="col-md-4">
                      <div class="testimonial mb-5">
                         <div class="avatar mx-auto">
-                           <a href='/speech'><img src="https://i.imgur.com/w8txiz1.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
+                           <a href='/tts3' target='_blank'><img src="https://i.imgur.com/w8txiz1.jpg" class="rounded-circle z-depth-1 img-fluid hover_to_zoom" /></a>
                         </div>
                         <h4 class="font-weight-bold dark-grey-text mt-4">Speech to Text</h4>
                         <h6 class="font-weight-bold blue-text my-3">Converter</h6>
@@ -98,90 +102,10 @@ function Content() {
                </div>
                <div class="row">
                   <div class="col-sm-12 mb-5">
-                     <div class="card mt-4 ">
-                        {/* <img class="card-img-top" src="https://images.pexels.com/photos/256467/pexels-photo-256467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> */}
-                        <div class="card-body">
-                           <h4 class="card-title" id='paragraph-generator'>Paragraph Generator</h4>
-                           <div class="card_main">
-                              <div class="overlap-group26">
-                                 <div class="rectangle-20">
-                                    <div class="meta-description valign-text-middle var1 font-weight-bolder">Blog title</div>
-                                    <textarea class="write-a-descrip-ntext-to-the-ai1 Blogtitle" placeholder="Input Blog title"></textarea>
-                                 </div>
-                              </div>
-                              <div class="overlap-group26">
-                                 <div class="rectangle-20">
-                                    <div class="meta-description valign-text-middle var1 font-weight-bolder">Blog meta description</div>
-                                    <textarea class="write-a-descrip-ntext-to-the-ai1 Blogmetadescription" placeholder="Input Blog meta description"></textarea>
-                                 </div>
-                              </div>
-                              <div class="overlap-group26">
-                                 <div class="rectangle-20">
-                                    <div class="meta-description valign-text-middle var1 font-weight-bolder">Header</div>
-                                    <textarea class="write-a-descrip-ntext-to-the-ai1 Header" placeholder="Input Header"></textarea>
-                                 </div>
-                              </div>
-                              <div>
-                                 {/* *********************************************************************** */}
-                                 <div class="templatekeyword">
-                                    <div class="textInfo valign-text-middle var1 font-weight-bolder">Keywords</div>
-                                    <div class="tag-container" id="tag-container">
-                                       <input id="templateKeywordInput" placeholder="Enter ↵" />
-                                       {/* <img src="../images/aiseo-symble.png" id="ocAiseoLogo" class="ocAiseoLogo" /> */}
-                                    </div>
-                                 </div>
-                                 {/* *********************************************************************** */}
 
-                              </div>
-                              <div class="templateSliderAndSelect">
-                                 {/* <select class="templateVerients">
-                                    <option value="1">1 Variant</option>
-                                    <option value="2">2 Variants</option>
-                                 </select> */}
-                                 {/* <div class="tempGenSlider">
-                                    <div class="range-slider">
-                                       <input id="aiseo-generate-size" type="range" min="1" max="3" step="1" value="2" name="size" />
-                                       <div class="range-labels">
-                                          <div class="range-label">Short</div>
-                                          <div class="range-label">Medium</div>
-                                          <div class="range-label">Long</div>
-                                       </div>
-                                    </div>
-                                 </div> */}
-                                 {/* <div class="setting_icon">
-                                    <button data-tooltip="Output and creativity settings" class="overview_gear_btn">
-                                       <ion-icon name="settings" role="img" class="md hydrated pointer-events-none" aria-label="settings"></ion-icon>
-                                    </button>
-                                 </div> */}
-                              </div>
-                              <div class="create_div selectBtnCont" style={{ "text-align": "center" }}>
-
-                                 <button class="btn btn-primary temp_generate">Generate
-                                    {/* <div class="spinner-border spinner-border-sm display-none" id="spinner_template" role="status" >
-                                    </div> */}
-                                 </button>
-                                 {/* <svg>
-                                    <use xlink:href="#select-arrow-down"></use>
-                                 </svg> */}
-                              </div>
-                              {/* <div class="generateTmpTextDiv display-block">
-                                 <textarea class="outputTextArea" id="outputTextArea"></textarea>
-                                 <button class="gtCopyToEditor" data-tooltip="Copy" id="gtCopyToEditor" title="Copy">
-                                    <img class="copy-outline ion-icon" src="../img/copy-outline.svg" alt="" srcset="" />
-                                 </button>
-                              </div>
-                              <div class="generateTmpTextDiv generateTmpTextDivTwo display-block">
-                                 <textarea class="outputTextArea" id="outputTextArea2"></textarea>
-                                 <button class="gtCopyToEditor" data-tooltip="Copy" id="gtCopyToEditor2" title="Copy">
-                                    <img class="copy-outline ion-icon" src="../img/copy-outline.svg" alt="" srcset="" />
-                                 </button>
-                              </div> */}
-                           </div>
-                        </div>
-                     </div>
                   </div>
                   <div class="col-sm-12 mb-5">
-                     <div class="card mt-4 hover_to_zoom">
+                     <div class="card mt-4">
                         <img class="card-img-top" src="https://images.pexels.com/photos/256467/pexels-photo-256467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         <div class="card-body">
                            <h4 class="card-title text-secondary">Stop Wasting Your Time and Money While Writing Paragraphs</h4>
@@ -197,9 +121,9 @@ function Content() {
                         </div>
                      </div>
                   </div>
-                  <div class="col-sm-12 mb-5 hover_to_zoom">
+                  <div class="col-sm-12 mb-5">
                      <div class="card mt-4">
-                        <img class="card-img-top" src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                        <img class="card-img-top" src="https://images.pexels.com/photos/1467277/pexels-photo-1467277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         <div class="card-body">
                            <h4 class="card-title text-secondary">Overcome Writers' Block in 5 Seconds!</h4>
                            <p class="card-text text-secondary">
@@ -221,7 +145,7 @@ function Content() {
                         </div> */}
                      </div>
                   </div>
-                  <div class="col-sm-12 mb-5 hover_to_zoom">
+                  <div class="col-sm-12 mb-5">
                      <div class="card mt-4">
                         <img class="card-img-top" src="https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         <div class="card-body">
@@ -324,9 +248,9 @@ function Content() {
                </div>
             </div>
          </section>
-         
+
          <br />
-         
+
       </div>
    );
 }
